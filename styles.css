@@ -379,14 +379,29 @@ iframe {
 }
 .detail {
     margin-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-.map-description iframe {
-    height: 20rem;
+.live-map {
+
+    height: 40rem;
     border: none;
 }
-
+.end {
+    background-color: var(--primary-color-brown);
+    width: 100%;
+    text-align: center;
+}
+.end h3 {
+    font-size: 2.2rem;
+    padding: 2rem;
+    color: var(--primary-color-yellow);
+}
+.end p {
+    font-size: 1.5rem;
+    color: var(--background-color-blue);
+    padding-bottom: 2rem;
+}
 
 
 
@@ -418,16 +433,16 @@ iframe {
     .why-this-place p {
         margin: 4rem;
     }
-    .watch {
+    .watch, .the-basics, .when, .map {
         margin-left: 4rem;
     }
     hr {
         margin-left: 4rem;
     }
-    .watch-description h2 {
+    .watch-description h2, .the-basics-description h2, .when-description h2, .map-description h2 {
         margin: 3rem 4rem 2rem 4rem;
     }
-    .watch-description p {
+    .watch-description p, .when-description p, .map-description p {
         margin: auto 4rem;
     }
     .rating {
@@ -439,7 +454,7 @@ iframe {
     .rating-description p {
         margin: auto 4rem;
     }
-    .rating-box {
+    .rating-box, .info-container, .when-container {
         margin: 3rem 4rem;
     }
     .rating-box-box p{
@@ -502,21 +517,25 @@ iframe {
         .watch {
             margin-left: 2rem;
         }
-        .rating {
+        .rating, .the-basics, .when, .map {
             margin-left: 2rem;
         }
         hr {
             margin-left: 2rem;
         }
-        .rating-description h2 {
+        .rating-description h2, .the-basics-description h2, .when-description h2, .map-description h2 {
             margin: 3rem 2rem 2rem 2rem;
         }
-        .rating-description p {
+        .rating-description p, .the-basics-description p, .when-description p, .map-description p {
             margin: auto 2rem;
         }
-        .rating-box {
+        .rating-box, .info-container, .when-container {
             grid-template-columns: 1fr;
             margin: 3rem 2rem;
+        }
+        .detail {
+            padding-left: 2rem;
+            padding-top: 0.5rem;
         }
         .rating-box-box p, .who p {
             margin: 1rem 0 0 0;
@@ -547,5 +566,8 @@ iframe {
         }
         .who-container p {
             margin: 1rem 0 0 0;
+        }
+        .info-box p, .info-box a[class="location"]{
+            margin: 0;
         }
 }
