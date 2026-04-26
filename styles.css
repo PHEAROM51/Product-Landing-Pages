@@ -1,0 +1,248 @@
+:root {
+
+    --primary-color-blue: #021373;
+    --primary-color-yellow: #BF971F;
+    --primary-color-brown: #261403;
+    --background-color-blue:  #b4bddc;
+    --text-color-blue: #021859;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 75%;
+}
+
+.nav {
+    background-color: var(--primary-color-blue);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    padding: 1.7rem;
+    border-bottom: 1px solid var(--primary-color-brown);
+    text-align: end;
+}
+
+.active {
+    background-color: var(--primary-color-brown);
+}
+.nav-title {
+    color: var(--primary-color-yellow);
+    font-size: 2.2rem;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-family:fantasy, sans-serif;
+    font-weight: 100;
+}
+.nav-title:hover:not(h1[class="nav-title"]) {
+    background-color: var(--primary-color-brown);
+}
+
+body {
+    background-color: var(--background-color-blue);
+    color: var(--text-color-blue);
+}
+/* Home */
+.home-background {
+    padding-top: 9.5rem;
+    width: 100%;
+    background-color: var(--primary-color-blue);
+}
+
+
+.type{
+    margin: auto;   
+    width: 30rem;
+    padding: 0.7rem;
+    background-color: var(--primary-color-yellow);
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 2rem; ;
+}
+.type p {
+    flex: 1;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.home-background h1, .about-title {
+    color: var(--primary-color-yellow);
+    font-size: 4rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 4rem 5rem;
+}
+
+.description, .description2 {
+    color: var(--background-color-blue);
+    margin-right: 9rem;
+    margin-left: 9rem;
+    font-size: 1.6rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.entertainment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    width: 100%;
+}
+.entertainment .cinema, .entertainment .music, .entertainment .art {
+    border: 1px solid var(--primary-color-brown);
+    padding: 2rem;
+}
+.entertainment .cinema h1, .entertainment .music h1, .entertainment .art h1 {
+    background-color: var(--primary-color-brown);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.entertainment .cinema h2, .entertainment .music h2, .entertainment .art h2 {
+    color: var(--text-color-blue);
+    font-size: 2.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.entertainment .cinema p, .entertainment .music p, .entertainment .art p {
+    color: var(--text-color-blue);
+    font-size: 1.4rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.entertainment-image {
+    margin-top: 1.5rem;
+    position: relative;
+    width: 100%;
+    height: 28.5rem;
+    object-fit: cover;
+}
+
+.why-this-place {
+    background-color: var(--primary-color-brown);
+    width: 100%;
+    padding: 4rem 0;
+}
+.why-this-place h3 {
+    color: var(--primary-color-yellow);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+}
+.logo {
+    width: 10rem;
+    padding-bottom: 2rem;
+    
+}
+.logo-container {
+    display: grid;
+    grid-template-columns: 1fr 14rem;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+}
+.why-this-place p {
+    color: var(--background-color-blue);
+    font-size: 1.6rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* About */
+
+.description2 {
+    padding-bottom: 6rem;
+}
+.logo2 {
+    width: 12rem;
+}
+.logo-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+}
+.logo-container2 h1 {
+    color: var(--primary-color-yellow);
+    font-size: 4rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: right;
+    padding-right: 2rem;
+}
+.about-container {
+    background-color: var(--primary-color-brown);
+    width: 50%;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 4rem;
+}
+.about-title {
+    margin: 0 5rem;
+}
+hr {
+    margin-top: 2rem;
+    width: 11rem;
+    margin-left: 6rem;
+    border: 3px solid var(--primary-color-yellow);
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--primary-color-yellow);
+}
+.watch {
+    margin-top: 3rem;
+    margin-left: 6rem;
+    width: 11rem;
+    padding: 0.7rem;
+    background-color: var(--primary-color-yellow);
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 2rem; ;
+}
+.watch p {
+    flex: 1;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--primary-color-brown);
+}
+.watch-description h2{
+    color: var(--text-color-blue);
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3rem 6rem 2rem 6rem;
+    
+}
+.watch-description p {
+    color: var(--text-color-blue);
+    font-size: 1.6rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto 6rem;
+}
+
+@media screen and (max-width: 768px ) {
+    .about-title {
+        margin: 0 1rem;
+    }
+    html {
+        font-size: 62.5%;
+    }
+}
+@media screen and (max-width: 480px  ) {
+    .about-title {
+        margin: 0;
+    }
+        html {
+            font-size: 50%;
+        }
+}
