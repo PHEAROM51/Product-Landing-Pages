@@ -541,8 +541,11 @@ iframe {
             margin: 3rem 2rem;
         }
         .detail {
-            padding-left: 2rem;
-            padding-top: 0.5rem;
+            margin-right: 1rem;
+            padding-right: 0;
+        }
+        .when-info {
+            padding-right: 0;
         }
         .rating-box-box p, .who p {
             margin: 1rem 0 0 0;
