@@ -39,6 +39,7 @@ html {
     padding: auto 0;
 }
 .logo {
+    margin-top: 0.6rem;
     width: 5rem;
     height: 5rem;
 }
@@ -361,7 +362,7 @@ iframe {
     background-color: var(--primary-color-yellow);
     border: 0.1rem solid var(--primary-color-brown);
     text-align: center;
-    width: 6rem;
+    width: 8rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     color: var(--primary-color-brown);
@@ -372,7 +373,7 @@ iframe {
     color: var(--primary-color-yellow);
 }
 .what-they-do h3, .detail{
-    margin-left: 4rem;
+    margin-left: 8rem !important;
 }
 .what-they-do h3 {
     color: var(--primary-color-brown);
@@ -490,12 +491,17 @@ iframe {
     }
 }
 
-@media screen and (max-width: 500px  ) {
+@media screen and (max-width: 600px  ) {
         html {
             font-size: 57.5%;
         }
         .nav-title {
-            font-size: 2rem;
+            font-size: 1.8rem;
+            margin: 0;
+            padding: 0.7rem;
+        }
+        .logo {
+            margin-top: 0.2rem;
         }
         .about-title {
         margin: 0;
