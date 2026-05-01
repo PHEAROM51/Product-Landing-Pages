@@ -218,7 +218,7 @@ hr {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: auto 6rem;
 }
-iframe {
+video {
     display: block;
     margin: 3rem auto;
     width: 90%;
